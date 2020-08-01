@@ -64,7 +64,7 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Node-RED" \
+    io.hass.name="Node-RED-Addon" \
     io.hass.description="Flow-based programming for the Internet of Things" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
