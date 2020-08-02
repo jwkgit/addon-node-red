@@ -81,12 +81,6 @@ LABEL \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
-    io.hass.name="ruuvitag-discovery" \
-    io.hass.description="home assistant ruuvitag discovery add-on" \
-    io.hass.arch="${BUILD_ARCH}" \
-    io.hass.type="addon" \
-    io.hass.version=${BUILD_VERSION} \
-    maintainer="Balda" \
     org.label-schema.description="Home Assistant Node red addon JWKGIT" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="addon-node-red" \
