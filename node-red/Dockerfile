@@ -81,12 +81,3 @@ LABEL \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
-    org.label-schema.description="Home Assistant Node red addon JWKGIT" \
-    org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.name="addon-node-red" \
-    org.label-schema.schema-version="1.0" \
-    org.label-schema.url="https://github.com/jwtgit/addon-node-red" \
-    org.label-schema.usage="https://github.com/jwtgit/addon-node-red/README.md" \
-    org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/jwtgit/addon-node-red" \
-    org.label-schema.vendor="Community Hass.io Addons"
