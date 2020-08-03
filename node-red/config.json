@@ -1,7 +1,7 @@
 {
   "name": "Node-RED-Addon-CEC",
   "version": "dev",
-  "slug": "noderedcec",
+  "slug": "Noderedcec",
   "description": "Flow-based programming for the Internet of Things",
   "url": "https://github.com/jwtgit/addon-node-red",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
