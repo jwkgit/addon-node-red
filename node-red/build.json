@@ -8,6 +8,5 @@
     "i386": "hassioaddons/base-i386:8.0.1"
   },
   "args": {
-    "LIBCEC_VERSION": "4.0.3"
   }
 }
