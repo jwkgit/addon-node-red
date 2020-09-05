@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "Node red cec Hass.io Addon",
-=======
-  "name": "Noderedcec",
->>>>>>> 33a48af38bc193e3223fff626673b3b3ccdd0643
   "url": "https://github.com/jwkgit/addon-node-red",
   "maintainer": "Jwkgit"
 }
