@@ -64,7 +64,7 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Node-RED-Addon" \
+    io.hass.name="Node-RED-Addon cec" \
     io.hass.description="Flow-based programming for the Internet of Things" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
@@ -76,7 +76,7 @@ LABEL \
     org.opencontainers.image.authors="Franck Nijhof <frenck@addons.community>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
-    org.opencontainers.image.source="https://github.com/hassio-addons/addon-node-red" \
+    org.opencontainers.image.source="https://github.comjwkgit/addon-node-red" \
     org.opencontainers.image.documentation="https://github.com/hassio-addons/addon-node-red/blob/master/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
