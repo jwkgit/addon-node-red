@@ -13,7 +13,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base
 RUN \
-    apk add --no-cache jq --virtual .build-dependencies \
+    apk add --no-cache --virtual .build-dependencies \
         g++=9.3.0-r2 \
         gcc=9.3.0-r2 \
         libc-dev=0.7.2-r3 \
@@ -21,37 +21,37 @@ RUN \
         make=4.3-r0 \
         py3-pip=20.1.1-r0 \
         python3-dev=3.8.3-r0 \
-    \
-    && apk add --no-cache \
-        git=2.26.2-r0 \
-        lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r0 \
-        nginx=1.18.0-r0  \
-        nodejs=12.17.0-r0 \
-        npm=12.17.0-r0 \
-        openssh-client=8.3_p1-r0 \
-        patch=2.7.6-r6 \
-        python3=3.8.3-r0 \
-    \
-    && npm config set unsafe-perm true \
-    \
-    && pip install --no-cache-dir -r /opt/requirements.txt \
-    \
-    && npm install \
-        --no-audit \
-        --no-optional \
-        --no-update-notifier \
-        --only=production \
-        --unsafe-perm \
-    \
-    && npm cache clear --force \
-    \
-    && echo -e "StrictHostKeyChecking no" >> /etc/ssh/ssh_config \
-    \
-    && apk del --no-cache --purge .build-dependencies \
-    && rm -fr \
-        /tmp/* \
-        /etc/nginx
+#    \
+#    && apk add --no-cache \
+#        git=2.26.2-r0 \
+#        lua-resty-http=0.15-r0 \
+#        nginx-mod-http-lua=1.18.0-r0 \
+#        nginx=1.18.0-r0  \
+#        nodejs=12.17.0-r0 \
+#        npm=12.17.0-r0 \
+#        openssh-client=8.3_p1-r0 \
+#        patch=2.7.6-r6 \
+#        python3=3.8.3-r0 \
+#    \
+#    && npm config set unsafe-perm true \
+#    \
+#    && pip install --no-cache-dir -r /opt/requirements.txt \
+#    \
+#    && npm install \
+#        --no-audit \
+#        --no-optional \
+#        --no-update-notifier \
+#        --only=production \
+#        --unsafe-perm \
+#    \
+#    && npm cache clear --force \
+#    \
+#    && echo -e "StrictHostKeyChecking no" >> /etc/ssh/ssh_config \
+#    \
+#    && apk del --no-cache --purge .build-dependencies \
+#    && rm -fr \
+#        /tmp/* \
+#        /etc/nginx
 
 # Copy root filesystem
 COPY rootfs /
